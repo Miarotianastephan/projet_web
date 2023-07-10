@@ -19,6 +19,8 @@ body {
     /* background: #f5f0f0; */
     box-shadow:  23px 23px 61px #e9e4e4,
                 -23px -23px 61px #fffcfc;
+                animation: fade 250ms ease-in-out forwards;
+
 }
 #ligne{
     display: flex;
@@ -55,3 +57,4 @@ body {
     border-radius: 50%;
     padding: 8px;
 }
+/* //... */
