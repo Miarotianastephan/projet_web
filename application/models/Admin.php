@@ -13,10 +13,10 @@ class Admin extends CI_Model
 
     
   
-        public function insertAdmin($nom, $prenom,$genre,$mail,$mdp,$datenaissance)
+        public function insertAdmin($nom,$mail,$mdp)
     {
-        $requete = "insert into Admin(nom,prenom,idgenre,mail,mdp,datenaissance ) values('%s','%s','%d','%s')";
-        $requete= sprintf($requete, $nom, $prenom,$genre,$mail,$mdp,$datenaissance);
+        $requete = "insert into Admin(nom,mail,pwd) values('%s','%s','%s')";
+        $requete= sprintf($requete, $nom,$mail,$mdp);
         $requete = $this->db->query($requete);
         $requete = $this->db->affected_rows();
         return $requete;

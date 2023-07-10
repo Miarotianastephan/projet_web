@@ -20,7 +20,7 @@ class AdminController extends CI_Controller {
     public function login()
     {
         $this->load->model('Utilisateur');
-	    $pseudo = $this->input->post("mail");
+	    $pseudo = $this->input->post("email");
 		$mdp = $this->input->post("mdp"); 
 		$logged = $this->Admin->is_logged($pseudo,$mdp);
 		$auth = $logged->row_array();

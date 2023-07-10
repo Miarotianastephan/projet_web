@@ -13,10 +13,10 @@ class Utilisateur extends CI_Model
 
     
   
-        public function insertUtilisateur($nom, $prenom,$genre,$contact,$mail,$mdp,$adresse,$taile,$poids,$datenaissance)
+        public function insertUtilisateur($nom,$genre,$mail,$mdp,$taille,$poids,$age)
     {
-        $requete = "insert into Utilisateur(nom,prenom,idgenre,contact,mail,mdp,adresse,taille,poids,datenaissance ) values('%s','%s','%d','%s','%s','%s','%s','%s','%s','%s')";
-        $requete= sprintf($requete, $nom, $prenom,$genre,$contact,$mail,$mdp,$adresse,$taile,$poids,$datenaissance);
+        $requete = "insert into Utilisateur(nom,idgenre,mail,pwd,taille,poids,age ) values('%s','%d','%s','%s','%s','%s','%d')";
+        $requete= sprintf($requete, $nom,$genre,$mail,$mdp,$taille,$poids,$age);
         $requete = $this->db->query($requete);
         $requete = $this->db->affected_rows();
         return $requete;

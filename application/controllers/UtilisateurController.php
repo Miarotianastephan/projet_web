@@ -5,7 +5,8 @@ class UtilisateurController extends CI_Controller {
 
     public function index()
     {   
-      $this->load->view('users/index');
+        $this->load->library('form_validation');
+        $this->load->view('users/index');
     }
     
     public function nouveau_membre()
@@ -13,22 +14,23 @@ class UtilisateurController extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->model('Utilisateur');
         $nom = $this->input->post('nom'); 
-        $prenom = $this->input->post('prenom');
-        $contact = $this->input->post('contact');
         $genre= $this->input->post('idgenre');
-        $mail = $this->input->post('mail');
-        $adresse = $this->input->post('adresse');
+        $mail = $this->input->post('email');
         $taille = $this->input->post('taille');
         $poids = $this->input->post('poids');
-        $dtn = $this->input->post('dtn');
-        $this->Utilisateur->insertUtilisateur($nom, $prenom,$genre,$contact,$mail,$adresse,$taille,$poids,$dtn);
+        $age = $this->input->post('age');
+        $mdp = $this->input->post('mdp');
+        $this->Utilisateur->insertUtilisateur($nom,$genre,$mail,$mdp,$taille,$poids,$age);
         $this->load->view('users/index');
     }
 
    
     public function inscrire()
     {
-        $this->load->view('users/inscription');
+        $this->load->model('Genre');
+        $listgenre = $this->Genre->selectGenre();
+        $data['listGenre'] = $listgenre;
+        $this->load->view('users/inscription',$data);
     }
     
 
@@ -37,7 +39,7 @@ class UtilisateurController extends CI_Controller {
     {
 
 		$this->load->model('Utilisateur');
-	    $pseudo = $this->input->post("mail");
+	    $pseudo = $this->input->post("email");
 		$mdp = $this->input->post("mdp"); 
 		$logged = $this->Utilisateur->is_logged($pseudo,$mdp);
 		$auth = $logged->row_array();
