@@ -2,67 +2,70 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class UtilisateurController extends CI_Controller {
+    
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('Utilisateur');
+        $this->load->model('Genre');
+    }
 
     public function index()
     {   
-        $this->load->library('form_validation');
         $this->load->view('users/index');
     }
     
-    public function nouveau_membre()
+    public function nouveau_utilisateur()
     {
-        $this->load->library('form_validation');
-        $this->load->model('Utilisateur');
-        $nom = $this->input->post('nom'); 
-        $genre= $this->input->post('idgenre');
-        $mail = $this->input->post('email');
+
+        $nomutilisateur = $this->input->post('nomutilisateur'); 
+        $mail = $this->input->post('mail');
+        $pwd = $this->input->post('pwd');
+        $idgenre= $this->input->post('idgenre');
         $taille = $this->input->post('taille');
         $poids = $this->input->post('poids');
         $age = $this->input->post('age');
-        $mdp = $this->input->post('mdp');
-        $this->Utilisateur->insertUtilisateur($nom,$genre,$mail,$mdp,$taille,$poids,$age);
-        $this->load->view('users/index');
-    }
 
-   
-    public function inscrire()
-    {
-        $this->load->model('Genre');
-        $listgenre = $this->Genre->selectGenre();
-        $data['listGenre'] = $listgenre;
-        $this->load->view('users/inscription',$data);
+        $this->Utilisateur->insertUtilisateur($nomutilisateur,$mail,$pwd,$idgenre,$taille,$poids,$age);
+        redirect(base_url());
     }
     
-
-
     public function login()
     {
 
-		$this->load->model('Utilisateur');
-	    $pseudo = $this->input->post("email");
-		$mdp = $this->input->post("mdp"); 
-		$logged = $this->Utilisateur->is_logged($pseudo,$mdp);
-		$auth = $logged->row_array();
+	    $email = $this->input->post('email');
+		$password = $this->input->post('password'); 
+
+        $loger = new Utilisateur();
+
+		$logged = $loger->is_logged($email,$password);
+		$auth = $logged;
+
 		if($auth['logged'] == 1)
 		{
-            $query = $this->Utilisateur->get_id($pseudo);
-            $idutilisateur = $query->row_array();
+            $utilisateur = $loger->connect($email,$password);
 
-            $this->session->set_userdata("idutilisateur",$idutilisateur['id']);
-			redirect('UtilisateurController/accueill');
-            //redirect('Users/accueill');	
+            $this->session->set_userdata("idutilisateur",$utilisateur["idutilisateur"]);
+            $this->session->set_userdata("nomutilisateur",$utilisateur["nomutilisateur"]);
+			redirect('UtilisateurController/index');
 		}
 		else {		  		
-        $this->session->set_flashdata('incorrect','Mail ou mot de passe icorrect');	 //eto 
-        $this->session->flashdata('incorrect');
-		redirect('UtilisateurController/index');	
+            $this->session->set_flashdata('incorrect','Mail ou mot de passe icorrect');
+            $this->session->flashdata('incorrect');
+            redirect('UtilisateurController/index');	
         }
+    }
+
+    function logout()
+    {
+        $this->session->sess_destroy();
+
+        redirect(base_url());
     }
 
     public function accueill()
     {
-        $this->load->model('Utilisateur');
-        $this->load->model('Societe');
         $id=$this->session->idutilisateur;
         $this->load->view('users/accueill');
     }
