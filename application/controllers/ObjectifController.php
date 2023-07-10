@@ -9,10 +9,10 @@ class ObjectifController extends CI_Controller {
         echo 'Haha';
         $this->load->model('Objectif');
         $listobjectif = $this->Objectif->selectObjectif();
-        $data['listObjectif'] = $listobjectif;
+        $data=array();
+        $data['listobjectif'] = $listobjectif;
         echo 'HUHU';
-
-        //$this->load->view('acceuill',$data);
+        $this->load->view('acceuill',$data);
     }
 
 

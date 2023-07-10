@@ -15,14 +15,7 @@ $this->load->helper('form');
 
 <body>
     
-<p>Coucouuu</p>
-<br>
-
-        <?php foreach($listobjectif->result_array() as $rows) {?>
-            <p> <?php echo $rows['nomobjectif']; ?></p>
-           
-        <?php } ?>
-
+<a href="<?php echo site_url('ObjectifController/listObjectif'); ?>"  class="btn btn-primary">Voir liste</a>
 </body>
 
 
