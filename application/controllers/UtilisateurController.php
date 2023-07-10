@@ -48,7 +48,7 @@ class UtilisateurController extends CI_Controller {
 
             $this->session->set_userdata("idutilisateur",$utilisateur["idutilisateur"]);
             $this->session->set_userdata("nomutilisateur",$utilisateur["nomutilisateur"]);
-			redirect('UtilisateurController/index');
+			redirect('AcceuilController');
 		}
 		else {		  		
             $this->session->set_flashdata('incorrect','Mail ou mot de passe icorrect');

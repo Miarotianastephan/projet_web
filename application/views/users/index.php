@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="<?= site_url("UtilisateurController/logout") ?>">Deconnexion</a>
     <?php if ($this->session->has_userdata("idutilisateur")){ ?>
+        <a href="<?= site_url("UtilisateurController/logout") ?>">Deconnexion</a>
         <p>Vous etes connecté en tant que <?= $this->session->userdata("nomutilisateur") ?></p>
     <?php }else{ ?>
         <p> Verifier vos info de connnexion ! </p>
