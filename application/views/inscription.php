@@ -29,11 +29,11 @@
   <body class="text-center">
     
 <main class="form-signin w-200 m-auto" id="formulaireInscription">
-  <form>
+  <form action="<?= site_url("UtilisateurController/nouveau_utilisateur") ?>" method="post">
     <h1 class="h3 mb-3 fw-normal">Inscription</h1>
 
     <div class="form-floating">
-      <input name="nom" class="form-control" placeholder="Nom">
+      <input name="nomutilisateur" class="form-control" placeholder="Nom">
       <label for="floatingPassword">Nom</label>
     </div><br>
     <div class="row">
@@ -46,32 +46,33 @@
         <div class="col-md-6">
             <div class="form-floating">
                 <select name="idgenre" id="" class="form-control">
-                    <option>Sexe</option>
-                    <option value="">Male</option>
+                  <?php foreach ($listGenre as $genre){  ?>
+                    <option value="<?= $genre["idgenre"] ?>"><?= $genre["nomgenre"] ?></option>
+                  <?php } ?>
                 </select>
             </div><br>
         </div>
     </div>
 
     <div class="form-floating">
-      <input id="nom" type="email" name="nemail" class="form-control" placeholder="Email">
+      <input id="nom" type="email" name="mail" class="form-control" placeholder="Email">
       <label for="floatingPassword">Email</label>
     </div><br>
     
     <div class="form-floating">
-      <input name="mdp" type="password" class="form-control" placeholder="Mots de passe">
+      <input name="pwd" type="password" class="form-control" placeholder="Mots de passe">
       <label for="floatingPassword">Mots de Passe</label>
     </div><br>
     <div class="row">
         <div class="col-md-6">
             <div class="form-floating">
-            <input name="poids" id="nom" type="email" class="form-control" placeholder="Poids">
+            <input name="poids" id="nom" class="form-control" placeholder="Poids">
             <label for="floatingPassword">Poids</label>
             </div><br>
         </div>
         <div class="col-md-6">
             <div class="form-floating">
-            <input name="taille" type="email" class="form-control" placeholder="Taille">
+            <input name="taille" class="form-control" placeholder="Taille">
             <label for="floatingPassword">Taille</label>
             </div><br>
         </div>

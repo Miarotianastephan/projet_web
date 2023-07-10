@@ -38,38 +38,33 @@ box-shadow:  21px 21px 38px #f3eeee,
                 <div class="row align-items-center g-lg-5 py-5">
                     <div class="col-lg-7 text-center text-lg-start" id="logImage">
                         <div id="soratraGauche">
-                            <h1 class="display-5 fw-bold lh-3 mb-4" >Bienvenue sur<br> E-regime</h1>
+                            <h1 class="display-5 fw-bold lh-3 mb-4" >Bienvenue sur<br> Fit-Foods</h1>
                             <p class="col-lg-10 fs-4" >Notre site est dédié à l'atteinte de vos objectifs de santé et de bien-être !</p>
                         </div>
                     </div>
                     <div class="col-md-10 mx-auto col-lg-5"id="formLogin">
                         
-                    <!-- <form class="p-4 p-md-5 border rounded-3 bg-light" >
-                     -->
-                    <form >
-                    <div id="soratra"><h3>Se connecter</h3></div><br>
-                        <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                        </div>
-                        <div class="checkbox mb-3">
-                        
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit" style="font-size: medium;">Connexion</button>
-                        <br><br>
-                        <div style="text-align:center;">
-                        ou
-                        </div>
-                        <br>
-                        
-                        <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color:white;color:black;font-size: medium;">S'inscrire</button>
+                    <form action="<?= site_url("UtilisateurController/login") ?>" method="post">
+                        <div id="soratra"><h3>Identifier Vous !</h3></div><br>
+                            <div class="form-floating mb-3">
+                                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Address Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Mot de passe</label>
+                            </div>
 
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" style="font-size: medium;">Connexion</button>
+                            <br><br>
+
+                            <div style="text-align:center;"> ou </div>
+                            <br>
+                            
+                            <a href=<?= site_url("Inscription") ?> class="w-100 btn btn-lg btn-primary" style="background-color:white;color:black;font-size: medium;">M'inscrire</a>
+
+                        </div>
                     </form>
-                    </div>
                 </div>
                 </div>
 
