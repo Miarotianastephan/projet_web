@@ -27,6 +27,9 @@ box-shadow:  21px 21px 38px #f3eeee,
     padding: 16% 3%;
     background-size: 100%;
     }
+    #soratraGauche{
+        opacity: 0.7;
+    }
 </style>
 <body>
     <div class="b-example-divider"></div>
@@ -34,9 +37,9 @@ box-shadow:  21px 21px 38px #f3eeee,
                 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
                 <div class="row align-items-center g-lg-5 py-5">
                     <div class="col-lg-7 text-center text-lg-start" id="logImage">
-                        <div>
-                            <h1 class="display-5 fw-bold lh-3 mb-4">Bienvenue sur<br> E-regime</h1>
-                            <p class="col-lg-10 fs-4" style="opacity: 0.7;">Notre site est dédié à l'atteinte de vos objectifs de santé et de bien-être !</p>
+                        <div id="soratraGauche">
+                            <h1 class="display-5 fw-bold lh-3 mb-4" >Bienvenue sur<br> E-regime</h1>
+                            <p class="col-lg-10 fs-4" >Notre site est dédié à l'atteinte de vos objectifs de santé et de bien-être !</p>
                         </div>
                     </div>
                     <div class="col-md-10 mx-auto col-lg-5"id="formLogin">
