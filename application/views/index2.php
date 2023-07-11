@@ -15,7 +15,7 @@ $this->load->helper('form');
 
 <body>
     
-<a href="<?php echo site_url('ObjectifController/listObjectif'); ?>"  class="btn btn-primary">Voir liste</a>
+<a href="<?php echo site_url('REgimeController/voirRegime'); ?>"  class="btn btn-primary">Voir liste</a>
 </body>
 
 

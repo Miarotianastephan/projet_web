@@ -32,6 +32,7 @@ box-shadow:  21px 21px 38px #f3eeee,
     }
 </style>
 <body>
+<a href="<?php echo site_url('REgimeController/voirRegime'); ?>"  class="btn btn-primary">Voir liste</a>
     <div class="b-example-divider"></div>
 
                 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
