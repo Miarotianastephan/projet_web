@@ -1,0 +1,44 @@
+.sidebar{
+    --poppins: 'Poppins', sans-serif;
+    font-family: var(--poppins);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: #023246;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+  .sidebar.open{
+    width: 250px;
+    background-color:#023246;
+  }
+  .sidebar li a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #023246;
+    font-family: var(--poppins);
+  }    
+  .sidebar .nav-list{
+    margin-top: 20px;
+    height: 100%;
+    margin-left: -32px;
+  }
+  .links_name{
+    font-family:var(--poppins);
+  }
+  #profil{
+      height: 153px;
+      width: 153px;
+      margin-left: 23%;
+      margin-right: 11%;
+      margin-top: 0%;
+      padding: 1px;
+  }

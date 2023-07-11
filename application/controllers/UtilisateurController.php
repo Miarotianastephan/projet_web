@@ -48,7 +48,9 @@ class UtilisateurController extends CI_Controller {
 
             $this->session->set_userdata("idutilisateur",$utilisateur["idutilisateur"]);
             $this->session->set_userdata("nomutilisateur",$utilisateur["nomutilisateur"]);
-			redirect('AcceuilController');
+            $this->session->set_userdata("estadmin","non");
+            
+			redirect('ObjectifController/allObjectif');
 		}
 		else {		  		
             $this->session->set_flashdata('incorrect','Mail ou mot de passe icorrect');
@@ -67,7 +69,7 @@ class UtilisateurController extends CI_Controller {
     public function accueill()
     {
         $id=$this->session->idutilisateur;
-        $this->load->view('users/accueill');
+        $this->load->view('users/accueil');
     }
     
 

@@ -5,53 +5,149 @@ html,body {
 
 body {
   display: flex;
-  align-items: left;
+  /* align-items: left; */
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
-#boite{
-    /* border: double; */
-    height: 99%;
-    width: 69%;
-    padding: 11%;
-    border-radius: 24px;
-    /* background: #f5f0f0; */
-    box-shadow:  23px 23px 61px #e9e4e4,
-                -23px -23px 61px #fffcfc;
-}
 #ligne{
     display: flex;
     justify-content:space-evenly;
-}
-#title{
-  color: #444444;
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-    padding: 20px 0 30px 0;
-    transition: all ease-in-out 0.3s;
-    text-align:center;
-    border-radius:15px;
-    text-decoration: none;
-}
-#title:hover{
-  background-color: #023246;
-  color: #fff;
-}
-#title:hover #symbole{
-  color: #FFE3B3;
-}
-#title h{
-  font-size: 20px;
-    color: #777777;
-    font-weight: 700;
-    margin: 10px 0;
-}
-#title p{
-    font-weight: 600;
 }
 #symbole{
   font-size: 32px;
     color: #0AB68B;
     border-radius: 50%;
     padding: 8px;
+}
+
+.card {
+    /* height: 100%; */
+    width: max-content;
+    padding: 7%;
+    border-radius: 12px;
+    box-shadow:  23px 23px 61px #e9e4e4,
+                -23px -23px 61px #fffcfc;
+                animation: fade 250ms ease-in-out forwards;
+  animation: fade 250ms ease-in-out forwards;
+  margin-left: -7%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  gap: .25em;
+}
+
+.form-group:last-child {
+  margin: 0;
+}
+
+.form-group > label {
+  font-weight: bold;
+  font-size: .8em;
+  color: #333;
+}
+
+.form-group > input {
+  border: 1px solid #333;
+  border-radius: .25em;
+  font-size: 1rem;
+  padding: .25em;
+}
+
+.step-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card.active {
+  animation: slide 250ms 125ms ease-in-out both;
+}
+
+.multi-step-form {
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(.75);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+#step2 *{
+    /* font-size: 12px; */
+    width: 100%;
+}
+
+
+/* 
+    Button css :
+*/
+.button{
+  border: none;
+  /* background-color: #0c0c0cf6; */
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  color: #f7f2f2;
+  width: 60.33%;
+  height: 40px;
+  margin-left: 5.33%;
+  margin-top: 12px;
+  background-color: rgba(32, 112, 87, 0.822);
+  /* font-size: 0.8em;; */
+}
+.button:hover{
+  color:  rgb(255, 131, 0);
+  transition: .4s;
+}
+.button-perso{
+  margin-left: 40.33%;
+}
+
+.form-control-perso,.form-control-perso-first{
+  outline: none;
+  border-radius: 0px;
+  border-top: 0px ;
+  border-left: 0px ;
+  border-right: 0px ;
+}
+
+.form-control-perso-first{
+  width: max-content;
+}
+
+.form-champ{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }

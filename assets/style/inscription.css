@@ -1,0 +1,107 @@
+body{
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: calc(100vh - 74px);
+    transition: .4s;
+}
+
+.maincss{
+    bottom: 15px;
+    position: relative;
+}
+
+#formulaireInscription{
+    /* background-color: rgb(104 135 125 / 45%); */
+    background-color: #fffdfd;
+    max-width: 350px;
+    padding: 10px 3%;
+    border-radius:  43px;
+    box-shadow:  21px 21px 38px #f3eeee,
+    -21px -21px 38px #f7f2f2;
+}
+
+/* 
+    Button css :
+*/
+.button{
+    border: none;
+    /* background-color: #0c0c0cf6; */
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+    color: #f7f2f2;
+    width: 60.33%;
+    height: 40px;
+    margin-left: 39.33%;
+    background-color: rgba(32, 112, 87, 0.822);
+    /* font-size: 0.8em;; */
+}
+.button:hover{
+    color:  rgb(255, 131, 0);
+    transition: .4s;
+}
+/* 
+    Formulaire css :
+*/
+.formulaireInscription form .form-champ{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulaireInscription form .form-champ label{
+    display: block;
+    font-weight: 600;
+    font-size: small;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.formulaireInscription form .form-champ input,
+.formulaireInscription form .form-champ textarea , 
+.formulaireInscription form .form-champ select{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid  #ccc;
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: bolder;
+    border-bottom-width: 2px;
+    transition:all 0.3s ease;
+}
+
+.formulaireInscription form .form-champ input:focus,.formulaireInscription form .form-champ input:hover,
+.formulaireInscription form .form-champ textarea:focus , 
+.formulaireInscription form .form-champ textarea:hover , 
+.formulaireInscription form .form-champ select:focus,
+.formulaireInscription form .form-champ select:hover{
+    color: rgb(20, 61, 54);
+    border-color: rgb(71, 143, 131);
+}
+
+.pass a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+}
+.pass a ul{
+    list-style: none;
+}
+.pass{
+    width: 60px;
+    height: max-content;
+    /* background-color: rgb(104 135 125 / 45%); */
+    background-color: rgb(255, 131, 0);
+    position: fixed;
+    z-index: 2;
+    margin-left: -25px;
+}
+
+.pass:hover > a{
+    color: #000;
+    transition: .4s ease-out;
+}

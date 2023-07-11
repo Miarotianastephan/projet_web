@@ -2,17 +2,19 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class ObjectifController extends CI_Controller {
-
     
-    public function listObjectif()
+    function __construct()
     {
-        echo 'Haha';
+        parent::__construct();
         $this->load->model('Objectif');
-        $listobjectif = $this->Objectif->selectObjectif();
-        $data=array();
+    }
+    
+    public function allObjectif()
+    {
+        $listobjectif = $this->Objectif->listObjectif();
         $data['listobjectif'] = $listobjectif;
-        echo 'HUHU';
-        $this->load->view('acceuill',$data);
+
+        $this->load->view('users/choixObjectif',$data);
     }
 
 

@@ -5,10 +5,9 @@ if ( ! defined('BASEPATH')) exit('No direct script acces allowed');
 class Objectif extends CI_Model
 {
    
-    public function selectObjectif()
+    public function listObjectif()
     {
-        $requete = $this->db->query("select * from Objectif ");
-        return $requete;
+        return $this->db->from("Objectif")->select("*")->get()->result_array();
     }
    
 }
