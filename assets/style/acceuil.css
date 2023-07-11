@@ -1,0 +1,268 @@
+.card {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: .5rem;
+    max-width: 300px;
+    margin: 0 auto;
+    animation: fade 250ms ease-in-out forwards;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    gap: .25em;
+  }
+  
+  .form-group:last-child {
+    margin: 0;
+  }
+  
+  .form-group > label {
+    font-weight: bold;
+    font-size: .8em;
+    color: #333;
+  }
+  
+  .form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+  }
+  
+  .step-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .card.active {
+    animation: slide 250ms 125ms ease-in-out both;
+  }
+  
+  .multi-step-form {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(.75);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+          #enTete{
+              background-color: white;
+              /* background-color: #08b4b2; */
+          }
+          .nav-link{
+              color: #00b4d8;
+              /* margin-right: 23px; */
+          }
+          .nav-link:hover{
+              background-color:#0077B6;
+              color:#CAF0F8;
+          }
+          #profile{
+              background-color:#0077B6;
+              color:#CAF0F8;
+          }
+          .petitTitre{
+              font-family: cursive;
+      font-size: x-large;
+      font-weight: 600;
+          }
+          #petitBoite{
+              padding: 4% 4%;
+              text-align: center;
+              border-radius: 24px;
+              box-shadow:  23px 23px 61px #e9e4e4,
+               -23px -23px 61px #fffcfc;
+              margin-left:5%;
+              margin-top: 5%;
+          }
+          #ligne{
+              flex-wrap: wrap;
+      justify-content: flex-start;
+      display: flex;
+      margin-left: 9%;
+  }
+  
+  .product__item__pic{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product__item {
+      margin-bottom: 50px;
+  }
+  
+  .product__item:hover .product__item__pic .product__item__pic__hover {
+      bottom: 20px;
+  }
+  
+  .product__item__pic {
+      height: 270px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .product__item__pic__hover {
+      position: absolute;
+      left: 0;
+      bottom: -100px;
+      width: 100%;
+      text-align: center;
+      -webkit-transition: all, 0.5s;
+      -moz-transition: all, 0.5s;
+      -ms-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s;
+  }
+  
+  .product__item__pic__hover li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 6px;
+  }
+  
+  .product__item__pic__hover li:last-child {
+      margin-right: 0;
+  }
+  
+  .product__item__pic__hover li:hover a {
+      background: #7fad39;
+      border-color: #7fad39;
+  }
+  
+  .product__item__pic__hover li:hover a i {
+      color: #ffffff;
+      transform: rotate(360deg);
+  }
+  
+  .product__item__pic__hover li a {
+      font-size: 16px;
+      color: #1c1c1c;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid #ebebeb;
+      background: #ffffff;
+      display: block;
+      border-radius: 50%;
+      -webkit-transition: all, 0.5s;
+      -moz-transition: all, 0.5s;
+      -ms-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s;
+  }
+  
+  .product__item__pic__hover li a i {
+      position: relative;
+      transform: rotate(0);
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      -ms-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      transition: all, 0.3s;
+  }
+  
+  .product__item__text {
+      text-align: center;
+      padding-top: 15px;
+  }
+  
+  .product__item__text h6 {
+      margin-bottom: 10px;
+  }
+  
+  .product__item__text h6 a {
+      color: #252525;
+  }
+  
+  .product__item__text h5 {
+      color: #252525;
+      font-weight: 700;
+  }
+  .product__item__pic__image img{
+    width: 100%;
+    height: 85%;
+  }
+
+  .nav-pills_perso li{
+      margin-right: 30px;
+  }
+  
+/* 
+    Button css :
+*/
+.button{
+    border: none;
+    /* font-size: 16px; */
+    font-weight: 500;
+    border-radius: 7px;
+    color: #f7f2f2;
+    width: 100%;
+    height: 40px;
+    margin-left: 39.33%;
+    background-color: rgba(32, 112, 87, 0.822);
+}
+.button:hover{
+    color:  rgb(255, 131, 0);
+    transition: .4s;
+}
+
+.action * {
+  list-style: none;
+}
+
+.action{
+  /* position: relative; */
+  inset: 0px auto auto 0px;
+  /* margin: 20px 0 0 -5em; */
+  /* transform: translate(39px, 42px); */
+}
+
+.action li:hover > .action * {
+  color: red;
+}
+
+/* .dropdown a {
+  margin-right: 15px;
+  padding-left: 20px;
+} */
+.fa-user-circle{
+  font-size: 25px;
+  margin-right: 15px;
+  padding-left: 0px;
+}
+
+          

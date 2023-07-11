@@ -15,13 +15,13 @@
             <div class="col-lg-7 text-center text-lg-start" id="logImage">
                 <div id="left">
                     <h1 class="display-5 fw-bold lh-3 mb-4" >Bienvenue sur<br> Fit-Foods</h1>
-                    <p class="col-lg-10 fs-4" >Votre santé et bien-être Entre nos Mains</p>
+                    <p class="col-lg-10 fs-4" >Accées Coté Administrateur</p>
                 </div>
             </div>
             <div class="col-md-10 mx-auto col-lg-5"id="formLogin">
                 
-            <form action="<?= site_url("UtilisateurController/login") ?>" method="post">
-                <div id="right"><h3>Identifier Vous !</h3></div><br>
+            <form action="<?= site_url("AdminController/login") ?>" method="post">
+                <div id="right"><h3>Connecter et Gérer</h3></div><br>
                     <div class="form-floating mb-3">
                         <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Address Email</label>
@@ -41,7 +41,7 @@
                             <a href=<?= site_url("Inscription") ?> class="button_a">M'inscrire !</a>
                         </span>
                         <span>
-                            <a href=<?= site_url("AdminController/index") ?> class="button_a">Back Office </a>
+                            <a href=<?= site_url("Index") ?> class="button_a">Se Connecter</a>
                         </span>
                     </div>
 
