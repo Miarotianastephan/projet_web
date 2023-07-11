@@ -231,90 +231,90 @@ insert into activite values(7,'Jumping Jack','','Faire du jumping jack pendant 1
 
 
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,80,1,15,4000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,100,2,10,5000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,150,3,5,6000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,200,4,15,7000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,250,5,10,8000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,275,6,5,9000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,275,7,20,3000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,80,1,15,4000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,100,2,10,5000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,150,3,5,6000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,200,4,15,7000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,250,5,10,8000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,275,6,5,9000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(1,275,7,20,3000);
 
 
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,80,2,15,4100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,100,3,10,5100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,150,4,5,6100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,200,5,15,7100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,250,6,10,8100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,275,7,5,9100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,275,1,20,3100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,80,2,15,4100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,100,3,10,5100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,150,4,5,6100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,200,5,15,7100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,250,6,10,8100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,275,7,5,9100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(2,275,1,20,3100);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,80,1,15,4200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,100,2,10,5200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,150,3,5,6200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,200,4,15,7200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,250,5,10,8200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,275,6,5,9200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,275,7,20,3200);
-
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,80,3,15,4300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,100,4,10,5300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,150,5,5,6300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,200,6,15,7300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,250,7,10,8300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,275,8,5,9300);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,275,9,20,3300);
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,80,2,15,4400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,100,3,10,5400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,150,4,5,6400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,200,5,15,7400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,250,6,10,8400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,275,7,5,9400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,275,1,20,3400);
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,80,1,15,4500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,100,2,10,5500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,150,3,5,6500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,100,4,15,7500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,250,5,10,8500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,275,6,5,9500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,275,7,20,3500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,80,1,15,4200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,100,2,10,5200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,150,3,5,6200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,200,4,15,7200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,250,5,10,8200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,275,6,5,9200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(3,275,7,20,3200);
 
 
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,80,3,15,4300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,100,4,10,5300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,150,5,5,6300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,200,6,15,7300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,250,7,10,8300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,275,8,5,9300);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(4,275,9,20,3300);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,80,3,15,4600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,100,4,10,5600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,150,5,5,6600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,200,6,15,7600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,250,7,10,8600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,275,1,5,9600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,275,2,20,3600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,80,2,15,4400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,100,3,10,5400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,150,4,5,6400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,200,5,15,7400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,250,6,10,8400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,275,7,5,9400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(5,275,1,20,3400);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,80,3,15,4650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,100,4,10,5650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,150,5,5,6650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,200,6,15,7650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,250,7,10,8650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,275,1,5,9650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,275,2,20,3650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,80,1,15,4500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,100,2,10,5500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,150,3,5,6500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,100,4,15,7500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,250,5,10,8500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,275,6,5,9500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(6,275,7,20,3500);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,80,5,15,4750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,100,6,10,5750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,150,7,5,6750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,200,1,15,7750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,250,2,10,8750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,275,3,5,9750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,275,4,20,3750);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,80,2,15,4700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,100,3,10,5700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,150,4,5,6700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,200,5,15,7700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,250,6,10,8700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,275,7,5,9700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,275,1,20,3700);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,80,3,15,4600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,100,4,10,5600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,150,5,5,6600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,200,6,15,7600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,250,7,10,8600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,275,1,5,9600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(7,275,2,20,3600);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,80,3,15,4650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,100,4,10,5650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,150,5,5,6650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,200,6,15,7650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,250,7,10,8650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,275,1,5,9650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(8,275,2,20,3650);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,80,5,15,4750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,100,6,10,5750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,150,7,5,6750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,200,1,15,7750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,250,2,10,8750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,275,3,5,9750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(9,275,4,20,3750);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,80,2,15,4700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,100,3,10,5700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,150,4,5,6700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,200,5,15,7700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,250,6,10,8700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,275,7,5,9700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(10,275,1,20,3700);
 
 
 
@@ -323,89 +323,89 @@ insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalori
 
 
 ////maigrir 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,80,1,15,400);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,100,2,10,500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,150,3,5,600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,200,4,15,700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,250,5,10,800);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,175,6,5,9000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,125,7,20,3000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,80,1,15,400);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,100,2,10,500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,150,3,5,600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,200,4,15,700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,250,5,10,800);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,175,6,5,9000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(11,125,7,20,3000);
 
 
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,80,2,15,410);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,100,3,10,510);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,150,4,5,610);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,200,5,15,710);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,250,6,10,810);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,125,7,5,910);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,175,1,20,310);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,80,2,15,410);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,100,3,10,510);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,150,4,5,610);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,200,5,15,710);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,250,6,10,810);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,125,7,5,910);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(12,175,1,20,310);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,80,1,15,420);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,100,2,10,520);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,150,3,5,620);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,200,4,15,720);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,250,5,10,820);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,125,6,5,920);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,175,7,20,320);
-
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,80,3,15,430);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,100,4,10,530);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,150,5,5,630);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,200,6,15,730);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,250,7,10,830);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,125,8,5,930);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,175,9,20,330);
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,80,2,15,440);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,100,3,10,540);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,150,4,5,640);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,200,5,15,740);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,250,6,10,840);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,175,7,5,940);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,175,1,20,340);
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,80,1,15,450);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,100,2,10,550);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,150,3,5,650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,100,4,15,750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,250,5,10,850);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,175,6,5,950);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,175,7,20,350);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,80,1,15,420);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,100,2,10,520);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,150,3,5,620);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,200,4,15,720);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,250,5,10,820);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,125,6,5,920);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(13,175,7,20,320);
 
 
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,80,3,15,430);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,100,4,10,530);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,150,5,5,630);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,200,6,15,730);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,250,7,10,830);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,125,8,5,930);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(14,175,9,20,330);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,80,3,15,1000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,100,4,10,1500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,150,5,5,2000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,200,6,15,2500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,250,7,10,3000);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,175,1,5,3500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,175,2,20,4000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,80,2,15,440);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,100,3,10,540);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,150,4,5,640);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,200,5,15,740);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,250,6,10,840);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,175,7,5,940);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(15,175,1,20,340);
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,80,3,15,1100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,100,4,10,1600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,150,5,5,2100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,200,6,15,2600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,250,7,10,3100);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,175,1,5,3600);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,175,2,20,4100);
-
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,80,5,15,1200);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,100,6,10,1625);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,150,7,5,2150);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,200,1,15,2650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,250,2,10,3250);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,175,3,5,3650);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,175,4,20,4000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,80,1,15,450);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,100,2,10,550);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,150,3,5,650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,100,4,15,750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,250,5,10,850);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,175,6,5,950);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(16,175,7,20,350);
 
 
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,80,2,15,1500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,100,3,10,1700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,150,4,5,2500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,200,5,15,2700);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,250,6,10,3500);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,100,7,5,3750);
-insert into regime_activite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,175,1,20,3450);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,80,3,15,1000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,100,4,10,1500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,150,5,5,2000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,200,6,15,2500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,250,7,10,3000);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,175,1,5,3500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(17,175,2,20,4000);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,80,3,15,1100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,100,4,10,1600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,150,5,5,2100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,200,6,15,2600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,250,7,10,3100);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,175,1,5,3600);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(18,175,2,20,4100);
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,80,5,15,1200);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,100,6,10,1625);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,150,7,5,2150);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,200,1,15,2650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,250,2,10,3250);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,175,3,5,3650);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(19,175,4,20,4000);
+
+
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,80,2,15,1500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,100,3,10,1700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,150,4,5,2500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,200,5,15,2700);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,250,6,10,3500);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,100,7,5,3750);
+insert into regimeactivite(idregime,quantite,idactivite,dureactivite,kilocalories) values(20,175,1,20,3450);
 

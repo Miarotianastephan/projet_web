@@ -7,7 +7,7 @@ class RegimeActivite extends CI_Model
     /*liste users*/
     public function listRegimeActivite()
     {
-        $requete = $this->db->from("regime_activite")->select("*")->get();
+        $requete = $this->db->from("RegimeActivite")->select("*")->get();
         return $requete->result_array();
     }
 
@@ -24,34 +24,27 @@ class RegimeActivite extends CI_Model
             echo "CALORIE MILA CONSOMMENA RAHA TE AHIA";
             $calorieejeina = $difdfcalorie - $det;
             echo $calorieejeina;
-            $list = $this->db->select("*")->from("regime_activite")->where("kilocalories >", $calorieejeina)->get()->result_array();
+            $list = $this->db->select("*")->from("RegimeActivite")->where("kilocalories >", $calorieejeina)->get()->result_array();
         }
         if($objectif == 2){
             echo "CALORIE MILA CONSOMMENA RAHA TE ATAVY";
             $calorieejeina = $det + $difdfcalorie;
             echo $calorieejeina;
-            $list = $this->db->select("*")->from("regime_activite")->where("kilocalories >", $calorieejeina)->get()->result_array();
+            $list = $this->db->select("*")->from("RegimeActivite")->where("kilocalories >", $calorieejeina)->get()->result_array();
         }
         //var_dump($list);
         $rep=array();
-        $temp = 0;
-        // foreach($list as $rows) {
-        //     $temp++;
-        // }
-
-        for($i =0; $i<7 ; $i++){
+        for($i =0; $i<7 ; $i ++){
             
-            // echo($i);
-            $rep[$i]['jour'] = " Jour ".$i;
             foreach($list as $rows) {
+                $rep[$i]['jour'] = " Jour ".$i+1;
                 $rep[$i]['regime']= $this->getDescription($rows['idregime']);
                 $rep[$i]['activite']= $this->getActivite($rows['idactivite']);
                 $prix =$this->getPrix($rows['idregime'],$rows['quantite']);
                 $rep[$i]['prix'] =$prix  * $nbsemaine;
             } 
         }
-        var_dump($rep[0]);
-        var_dump($rep[6]);
+        var_dump($rep);
         return $rep;
     }
 
@@ -116,17 +109,15 @@ class RegimeActivite extends CI_Model
         $sql = "select * from regime_menu join menu on regime_menu.idmenu = menu.idmenu 
         join regime on regime_menu.idregime=regime.idregime where regime_menu.idregime = '%d'";
         $requete= sprintf($sql,$idregime);
-        $requete = $this->db->query($requete)->result_array();
-        // var_dump($requete);
+        $requete = $this->db->query($requete);
         return $requete;
     }
 
     public function getActivite($idactivite){
-        $sql = "select * from regime_activite join activite on regime_activite.idactivite = activite.idactivite 
-         where  regime_activite.idactivite = '%d'";
+        $sql = "select * from regimeactivite join activite on regimeactivite.idactivite = activite.idactivite 
+         where  regimeactivite.idactivite = '%d'";
         $requete= sprintf($sql,$idactivite);
-        $requete = $this->db->query($requete)->result_array();
-        // var_dump($requete);
+        $requete = $this->db->query($requete);
         return $requete;
     }
 

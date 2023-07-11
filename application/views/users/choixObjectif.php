@@ -18,8 +18,7 @@
         
         <?php if ($this->session->has_userdata("idutilisateur")){ ?>
         <main class="maincss m-auto" id="formulaireInscription">
-        <!-- <form data-multi-step class="multi-step-form" action="<?= site_url("UtilisateurController/accueill") ?>" method="post"> -->
-        <form data-multi-step class="multi-step-form" action="<?= site_url("RegimeController/voirRegime") ?>" method="post">
+        <form data-multi-step class="multi-step-form" action="<?= site_url("UtilisateurController/accueill") ?>" method="post">
             <div class="card" data-step>
                     <div class="container">
                         <h3>Bonjour, <?= $this->session->userdata("nomutilisateur") ?></h3>
@@ -29,7 +28,7 @@
                         <div class="container">
                             <div class="row" id="ligne" style="">
                                 <b class="col-md-3" value="1">
-                                    <select name="idobjectif" id="" class="form-control form-control-perso-first">
+                                    <select name="" id="" class="form-control form-control-perso-first">
                                     <?php foreach($listobjectif as $ob){ ?>    
                                         <option value="<?= $ob["idobjectif"]?>"><?= $ob["nomobjectif"]?></option>
                                     <?php } ?>
