@@ -40,7 +40,7 @@ create table portemonnaie(
 
 create table code(
     idcode INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    numerocode INT, -- 123456789
+    numerocode VARCHAR(20), -- 123456789
     valeurCode FLOAT -- 5.000.000 ariary
 );
 
@@ -65,42 +65,51 @@ create table regime(
 create table activite(
     idactivite INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nomactivite VARCHAR(250) NOT NULL,
-    descriptionactivite TEXT,
-    depenseactivite FLOAT NOT NULL -- 145 kilocalories
+    photoactivite VARCHAR(50),
+    descriptionactivite TEXT
 );
 
-create table commande(
-    idcommande INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    idutilisateur INT NULL,
-    idregime INT NOT NULL,
-    FOREIGN KEY (idregime) REFERENCES regime(idregime),
-    FOREIGN KEY (idutilisateur) REFERENCES utilisateur(idutilisateur)
-);
+
 
 create table menu(
     idmenu INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nonmenu VARCHAR(100) DEFAULT '',
     descriptionmenu TEXT,
+    photomenu VARCHAR(50),
     statutmenu INT NOT NULL, -- (1:Maraina, 1:a=midi , 3:Soir, 4:goute)
-    valeurmenu FLOAT
+    prixmenu FLOAT
 );
 
 create table regime_menu(
     idregimemenu INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     idregime INT NOT NULL,
-    FOREIGN KEY (idregime) REFERENCES regime(idregime)
+    idmenu INT NOT NULL,
+    composition FLOAT NOT NULL,
+    FOREIGN KEY (idregime) REFERENCES regime(idregime),
+    FOREIGN KEY (idmenu) REFERENCES menu(idmenu)
 );
 
-create table objectif_activite(
-    idobjectif INT NOT NULL,
+
+
+create table regimeactivite(
+    idregimeactivite INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    idregime INT NOT NULL,
+    quantite FLOAT NOT NULL,
     idactivite INT NOT NULL,
-    FOREIGN KEY (idobjectif) REFERENCES objectif(idobjectif),
+    dureactivite  INT NOT NULL,
+    kilocalories FLOAT NOT NULL,
+    FOREIGN KEY (idregime) REFERENCES regime(idregime),
     FOREIGN KEY (idactivite) REFERENCES activite(idactivite)
 );
 
-create table objectif_regime(
-    idobjectif INT NOT NULL,
-    idregime INT NOT NULL,
-    FOREIGN KEY (idobjectif) REFERENCES objectif(idobjectif),
-    FOREIGN KEY (idregime) REFERENCES regime(idregime)
+create table commande(
+    idcommande INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    idutilisateur INT NULL,
+    idregimeactivite INT NOT NULL,
+    jour INT NOT NULL,
+    semaine INT NOT NULL,
+    prixcommande FLOAT NOT NULL,
+    datecommande TIMESTAMP,
+    FOREIGN KEY (idregimeactivite) REFERENCES regimeactivite(idregimeactivite),
+    FOREIGN KEY (idutilisateur) REFERENCES utilisateur(idutilisateur)
 );
