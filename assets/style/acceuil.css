@@ -265,4 +265,13 @@
   padding-left: 0px;
 }
 
+.step-title-prix{
+  font-weight: 600;
+}
+
+.step-title-activ{
+  font-weight: bold;
+  color:  rgba(32, 112, 87, 0.822);
+}
+
           

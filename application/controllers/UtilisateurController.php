@@ -55,7 +55,7 @@ class UtilisateurController extends CI_Controller {
 		else {		  		
             $this->session->set_flashdata('incorrect','Mail ou mot de passe icorrect');
             $this->session->flashdata('incorrect');
-            redirect('UtilisateurController/index');	
+            $this->logout();
         }
     }
 
@@ -70,6 +70,10 @@ class UtilisateurController extends CI_Controller {
     {
         $id=$this->session->idutilisateur;
         $this->load->view('users/accueil');
+    }
+
+    public function detailacc(){
+        $this->load->view('users/detailacc');
     }
     
 

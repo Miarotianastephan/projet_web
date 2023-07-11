@@ -42,15 +42,15 @@ insert into regime values(20,'regime flexitarien');
 
 
 ///grossir 
-insert into menu values(1,'Salade de legume frais avec du poulet speciale','Une plat pour gagner de poids a manger le midi composer d oeuf dur, brocoli, poulet, concombre... ','gdej1',2,7000);
-insert into menu values(2,'Crevette au crudite','Une plat pour gagner de calorie a consommer le midi composer de crevette , crudite... ','gdej2',2,10000);
-insert into menu values(3,'Poisson au legume saute','Une plat pour gagner de calorie a consommer le midi composer de brocoli,chou,viande de poisson... ','gdej3',2,15000);
-insert into menu values(4,'Champignon et crevette avec legume','Composer de crevette, Champignon, legume... ','gdej4',2,10000);
-insert into menu values(5,'Poisson sauce','Une plat riche en nutriment composer de poisson, brocoli... ','gdej5',2,15000);
-insert into menu values(6,'Salade de legume avec poisson','Une plat riche en nutriment composer de poisson, carotte... ','gdej6',2,10000);
-insert into menu values(7,'Charcuterie et legume','Une plat riche en nutriment','gdej7',2,5000);
-insert into menu values(8,'Soupe de cervelle','Une plat riche en nutriment composer de cervelle de boeuf et une soupe bien chaude ... ','gdej8',2,9000);
-insert into menu values(9,'Steak simple','viande bien cuite avec salade et autre composants croustillant','gdej9',2,7000);
+insert into menu values(1,'Salade de legume frais avec du poulet speciale','Une plat pour gagner de poids a manger le midi composer d oeuf dur, brocoli, poulet, concombre... ','gdej1.jpg',2,7000);
+insert into menu values(2,'Crevette au crudite','Une plat pour gagner de calorie a consommer le midi composer de crevette , crudite... ','gdej2.jpg',2,10000);
+insert into menu values(3,'Poisson au legume saute','Une plat pour gagner de calorie a consommer le midi composer de brocoli,chou,viande de poisson... ','gdej3.jpg',2,15000);
+insert into menu values(4,'Champignon et crevette avec legume','Composer de crevette, Champignon, legume... ','gdej4.jpg',2,10000);
+insert into menu values(5,'Poisson sauce','Une plat riche en nutriment composer de poisson, brocoli... ','gdej5.jpg',2,15000);
+insert into menu values(6,'Salade de legume avec poisson','Une plat riche en nutriment composer de poisson, carotte... ','gdej6.jpg',2,10000);
+insert into menu values(7,'Charcuterie et legume','Une plat riche en nutriment','gdej7.jpg',2,5000);
+insert into menu values(8,'Soupe de cervelle','Une plat riche en nutriment composer de cervelle de boeuf et une soupe bien chaude ... ','gdej8.jpg',2,9000);
+insert into menu values(9,'Steak simple','viande bien cuite avec salade et autre composants croustillant','gdej9.jpg',2,7000);
 
 
 insert into menu values(10,'Steak au germe de Soja','Le germe de Soja contient beaucoup de calorie et bon pour la sante','gdinner1.jpg',3,7000);
@@ -80,15 +80,15 @@ insert into menu values(27,'Yaourt au fraise','Yaourt accompagne de fraise','ggo
 
 
 ///maigrir
-insert into menu values(28,'Soupe au salade de legume ','','mdej1',2,10000);
-insert into menu values(29,'salade de legume ','Lentille , courgettes , feta , aBasilic ,Coriande , Graines de tournelsol ','mdej2',2,10000);
+insert into menu values(28,'Soupe au salade de legume ','','mdej1.jpg',2,10000);
+insert into menu values(29,'salade de legume ','Lentille , courgettes , feta , aBasilic ,Coriande , Graines de tournelsol ','mdej2.jpg',2,10000);
 insert into menu values(30,'crudite ','Crudite fourree au mangue ','mdej3',2,15000);
-insert into menu values(31,'Salade de crevette','legume, Champignon, crevettes... ','mdej4',2,12000);
-insert into menu values(32,'Pain Avec sauce','Une plat riche en nutriment composer de pain,oeufs , ...','mdej5',2,13200);
-insert into menu values(33,'Salade de pate','Une plat riche en nutriment composer de pate, carotte, thon... ','mdej6',2,10000);
-insert into menu values(34,'salade au Avocat','Une plat riche en nutriment composer de avocat et de legume ','mdej7',2,5000);
-insert into menu values(35,'salade de pate au thon','Une plat riche en nutriment composer de cervelle de jambon, parmesan ,petit poids ... ','mdej8',2,9000);
-insert into menu values(36,'Salade de poulet au curry','poulet bien cuite avec batternut et obergines','mdej9',2,7000);
+insert into menu values(31,'Salade de crevette','legume, Champignon, crevettes... ','mdej4.jpg',2,12000);
+insert into menu values(32,'Pain Avec sauce','Une plat riche en nutriment composer de pain,oeufs , ...','mdej5.jpg',2,13200);
+insert into menu values(33,'Salade de pate','Une plat riche en nutriment composer de pate, carotte, thon... ','mdej6.jpg',2,10000);
+insert into menu values(34,'salade au Avocat','Une plat riche en nutriment composer de avocat et de legume ','mdej7.jpg',2,5000);
+insert into menu values(35,'salade de pate au thon','Une plat riche en nutriment composer de cervelle de jambon, parmesan ,petit poids ... ','mdej8.jpg',2,9000);
+insert into menu values(36,'Salade de poulet au curry','poulet bien cuite avec batternut et obergines','mdej9.jpg',2,7000);
 
 
 insert into menu values(37,'Poisson au avocat','Les avocats contiennent beaucoup de calorie et bon pour la sante','mdinner1.jpg',3,7000);
@@ -224,13 +224,13 @@ insert into regime_menu(idregime,idmenu,composition) values(20,47,30);
 insert into regime_menu(idregime,idmenu,composition) values(20,52,10);
 
 
-insert into activite values(1,'Squat','','Faire du squat 3 serie de 10 fois avec une repos de 2minutes');
-insert into activite values(2,'Squat Hard','','Faire du squat 4 serie de 10,12,15,20 fois avec une repos de 2minutes');
-insert into activite values(3,'Corde a sauter','','Faire de la corde 3 serie de 20 fois avec une repos de 2minutes');
-insert into activite values(4,'Corde a sauter Hard','','Faire de la corde 3 serie de 50 fois avec une repos de 2minutes , boire de l eau pas plus de 3 gorger');
-insert into activite values(5,'Pompe','','Faire de la pompe 3 serie de 10 fois avec une repos de 2minutes , boire de l eau pas plus de 3 gorger');
-insert into activite values(6,'Jogging','','Faire du jogging pendant 30 minutes, boire de l eau pas plus de 3 gorger et bien etire les muscles apres');
-insert into activite values(7,'Jumping Jack','','Faire du jumping jack pendant 1 minutes dans 3 serie avec une repos de 2 minutes, boire de l eau pas plus de 3 gorger et bien etire les muscles apres');
+insert into activite values(1,'Squat','activite1.jpg','Faire du squat 3 serie de 10 fois avec une repos de 2minutes');
+insert into activite values(2,'Squat Hard','activite2.jpg','Faire du squat 4 serie de 10,12,15,20 fois avec une repos de 2minutes');
+insert into activite values(3,'Corde a sauter','activite3.jpg','Faire de la corde 3 serie de 20 fois avec une repos de 2minutes');
+insert into activite values(4,'Corde a sauter Hard','activite4.jpg','Faire de la corde 3 serie de 50 fois avec une repos de 2minutes , boire de l eau pas plus de 3 gorger');
+insert into activite values(5,'Pompe','activite4.jpg','Faire de la pompe 3 serie de 10 fois avec une repos de 2minutes , boire de l eau pas plus de 3 gorger');
+insert into activite values(6,'Jogging','activite5.jpg','Faire du jogging pendant 30 minutes, boire de l eau pas plus de 3 gorger et bien etire les muscles apres');
+insert into activite values(7,'Jumping Jack','activite6.jpg','Faire du jumping jack pendant 1 minutes dans 3 serie avec une repos de 2 minutes, boire de l eau pas plus de 3 gorger et bien etire les muscles apres');
 
 
 

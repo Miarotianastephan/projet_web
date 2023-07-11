@@ -25,7 +25,6 @@
                         <h3>Bonjour, <?= $this->session->userdata("nomutilisateur") ?></h3>
                         <h5>Passons aux choix de vos objectifs</h5><br>
                         <p>A quoi attendez-vous ? </p><br>
-                        <a href="<?= site_url("UtilisateurController/logout") ?>">Deconnexion</a>
                         <div class="container">
                             <div class="row" id="ligne" style="">
                                 <b class="col-md-3" value="1">

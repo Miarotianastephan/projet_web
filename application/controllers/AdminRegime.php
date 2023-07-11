@@ -7,15 +7,18 @@ class AdminRegime extends CI_Controller {
     public function insertRegime()
     {
         try {
-            $nomRegime = $pseudo = $this->input->post("nomRegime");
-            $menuMidi = $pseudo = $this->input->post("menuMidi");
-            $menuMatin = $pseudo = $this->input->post("menuMatin");
-            $menuSoir = $pseudo = $this->input->post("menuSoir");
-            $menuGouter = $pseudo = $this->input->post("menuGouter");
-            $pourcentageMatin = $pseudo = $this->input->post("pourcentageMatin");
-            $pourcentageMidi = $pseudo = $this->input->post("pourcentageMidi");
-            $pourcentageSoir = $pseudo = $this->input->post("pourcentageSoir");
-            $pourcentageGouter = $pseudo = $this->input->post("pourcentageGouter");
+            $this->load->model('AdminRegime_model');
+            $nomRegime = $this->input->post("nomRegime");
+            $activite = $this->input->post("activite");
+            $menuMidi = $this->input->post("menuMidi");
+            $menuMatin = $this->input->post("menuMatin");
+            $menuSoir = $this->input->post("menuSoir");
+            $menuGouter = $this->input->post("menuGouter");
+            $pourcentageMatin = $this->input->post("pourcentageMatin");
+            $pourcentageMidi = $this->input->post("pourcentageMidi");
+            $pourcentageSoir = $this->input->post("pourcentageSoir");
+            $pourcentageGouter = $this->input->post("pourcentageGouter");
+            $calorie = $this->input->post("calorie");
 
             $somme = $pourcentageGouter + $pourcentageSoir + $pourcentageMidi + $pourcentageMatin ;
             if ($somme > 100) {
@@ -24,23 +27,24 @@ class AdminRegime extends CI_Controller {
             if ($somme < 0){
                 throw new Exception("Pourcentage non valide negative");
             }
+            $this->AdminRegime_model->insertRegimeMenuMatinMidiSoir($nomRegime,$menuMatin,$menuMidi,$menuSoir,$menuGouter,$pourcentageMatin,$pourcentageMidi,$pourcentageSoir,$pourcentageGouter,$calorie,$activite);
             $this->regime();
         } catch (Exception $e) {
             echo $e -> getMessage();
         }
-        
-       
     }
+
     public function regime(){
 
         $this->load->model('AdminRegime_model');
+        $this->load->model('AdminActivite_model');
 
         $data['matin'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(1);
         $data['midi'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(2);
         $data['soir'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(3);
         $data['gouter'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(4);
-        
-        $this->load->view('regime',$data);
+        $data['activite'] = $this->AdminActivite_model->getAllActivite();
+        $this->load->view('admin/regime',$data);
     }
 }
 

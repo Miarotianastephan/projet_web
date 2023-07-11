@@ -6,6 +6,8 @@ class AdminController extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Admin');
+        $this->load->model('AdminRegime_model');
+        $this->load->model('AdminActivite_model');
     }
     
     public function index()
@@ -32,7 +34,7 @@ class AdminController extends CI_Controller {
             $this->session->set_userdata("nomadmin",$admin['nomadmin']);
             $this->session->set_userdata("mail",$admin['mail']);
             $this->session->set_userdata("estadmin","oui");
-
+            
 			// redirect('AdminController/accueiladmin');
 			redirect('AdminController/accueildashboard');
 		}
@@ -56,28 +58,41 @@ class AdminController extends CI_Controller {
 
     public function accueiladmin()
     {
-        $this->load->view('admin/accueil');
+        $data['statnombre'] = $this->Admin->getStatNombre();
+        $data['statnom'] = $this->Admin->getStatNom();
+        $this->load->view('admin/accueil',$data);
     }
 
     public function accueildashboard()
     {
-        $this->load->view('admin/dashboard');
+
+        $data['matin'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(1);
+        $data['midi'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(2);
+        $data['soir'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(3);
+        $data['gouter'] = $this->AdminRegime_model->getAllRegimeMenuByStatutMenu(4);
+        $data['activite'] = $this->AdminActivite_model->getAllActivite();
+        $data['statNombre'] = $this->Admin->getStatNombre();
+        $data['statNom'] = $this->Admin->getStatNom();
+        $this->load->view('admin/dashboard',$data);
     }
 
     // Fonction pour les CRUD 
- 
+    
     public function insertRegime()
     {
         try {
-            $nomRegime = $pseudo = $this->input->post("nomRegime");
-            $menuMidi = $pseudo = $this->input->post("menuMidi");
-            $menuMatin = $pseudo = $this->input->post("menuMatin");
-            $menuSoir = $pseudo = $this->input->post("menuSoir");
-            $menuGouter = $pseudo = $this->input->post("menuGouter");
-            $pourcentageMatin = $pseudo = $this->input->post("pourcentageMatin");
-            $pourcentageMidi = $pseudo = $this->input->post("pourcentageMidi");
-            $pourcentageSoir = $pseudo = $this->input->post("pourcentageSoir");
-            $pourcentageGouter = $pseudo = $this->input->post("pourcentageGouter");
+            $this->load->model('AdminRegime_model');
+            $nomRegime = $this->input->post("nomRegime");
+            $activite = $this->input->post("activite");
+            $menuMidi = $this->input->post("menuMidi");
+            $menuMatin = $this->input->post("menuMatin");
+            $menuSoir = $this->input->post("menuSoir");
+            $menuGouter = $this->input->post("menuGouter");
+            $pourcentageMatin = $this->input->post("pourcentageMatin");
+            $pourcentageMidi = $this->input->post("pourcentageMidi");
+            $pourcentageSoir = $this->input->post("pourcentageSoir");
+            $pourcentageGouter = $this->input->post("pourcentageGouter");
+            $calorie = $this->input->post("calorie");
 
             $somme = $pourcentageGouter + $pourcentageSoir + $pourcentageMidi + $pourcentageMatin ;
             if ($somme > 100) {
@@ -86,26 +101,39 @@ class AdminController extends CI_Controller {
             if ($somme < 0){
                 throw new Exception("Pourcentage non valide negative");
             }
-            $this->regime();
+            $this->AdminRegime_model->insertRegimeMenuMatinMidiSoir($nomRegime,$menuMatin,$menuMidi,$menuSoir,$menuGouter,$pourcentageMatin,$pourcentageMidi,$pourcentageSoir,$pourcentageGouter,$calorie,$activite);
+            $this->accueildashboard();
         } catch (Exception $e) {
             echo $e -> getMessage();
         }
     }
-
-    
-    public function regime(){
-
-        $admin = new Admin();
-
-        $data['matin'] = $admin->getAllRegimeMenuByStatutMenu(1);
-        $data['midi'] = $admin->getAllRegimeMenuByStatutMenu(2);
-        $data['soir'] = $admin->getAllRegimeMenuByStatutMenu(3);
-        $data['gouter'] = $admin->getAllRegimeMenuByStatutMenu(4);
         
-        $this->load->view('regime',$data);
+    public function regime(){
+        $this->load->view('admin/regime',$data);
     }
 
 
+    public function insertActivite(){
+        $this->load->model('AdminActivite_model');
+        $nomactivite = $this->input->post("nomactivite");
+        $descriptionactivite = $this->input->post("descriptionactivite");
+        $photoactivite = $this->upload_image('photoactivite');
+        $this->AdminActivite_model->insertActivite($nomactivite,$photoactivite['file_name'],$descriptionactivite);
+        $this->accueildashboard();
+    }
+
+    public function activite(){
+        $this->load->view('admin/activite');
+    }
+
+    public function upload_image($nom_image){
+		$config['upload_path'] = './assets/img/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$this->load->library('upload');
+		$this->upload->initialize($config);
+		$this->upload->do_upload($nom_image);
+		return $file_info = $this->upload->data();
+	}
 
 }
 

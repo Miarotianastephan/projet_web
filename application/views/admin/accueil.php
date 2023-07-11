@@ -1,4 +1,6 @@
 
+<?php echo json_encode($statNom); 
+var_dump($statNom);?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -125,12 +127,46 @@
     </div>
 
   </section>
+<script defer>
+    var ctx3= document.getElementById('diagrame_2').getContext('2d');
+var data = {
+   labels:<?php echo json_encode($statNom); ?>;
+  datasets: [{
+    data: <?php echo json_encode($statNombre); ?>,
+    backgroundColor: ['blue', 'greenyellow'] // Couleurs des segments du diagramme
+  }]
+};
 
+// Créez le graphe 2
+var graphe_camembert = new Chart(ctx3, {
+  type: 'pie', // Type de graphe (diagramme circulaire)
+  data: <?php echo json_encode($statNombre); ?>,
+  options: {
+    responsive: true // Rend le graphe réactif à la taille de la fenêtre
+  }
+});
+
+      //fixe
+      const fixe = document.getElementById('fixe');
+        
+      new Chart(fixe, {
+        type: 'pie',
+        data: {
+          //label sy data apifandraisina @ json le retour ao ambony
+          labels: <?php echo json_encode($statNom); ?>,
+          datasets: [{
+          label: '#Hashtag Recues',
+          data:<?php echo json_encode($statNombre); ?>,
+          borderWidth: 1
+          }]
+        },
+    });
+</script>
 
   <script src="<?php echo base_url('assets/dist/js/bootstrap.bundle.min.js');?>" ></script>
   <script src="<?php echo base_url('assets/JS/scriptMenu.js'); ?>" ></script>
   <script src="<?php echo base_url('assets/JS/chart.js'); ?>"></script>     
-  <script src="<?php echo base_url('assets/JS/report.js'); ?>"></script>  
+  
   
    
 </body>

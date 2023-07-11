@@ -44,17 +44,21 @@ create table code(
     valeurCode FLOAT -- 5.000.000 ariary
 );
 
+
+create table notification(
+    idnotification INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    idutilisateur INT NOT NULL,
+    idcode INT NOT NULL,
+    statu int NOT NULL
+);
+
 create table transaction(
     idtransaction INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     idadmin INT NOT NULL,
-    idutilisateur INT NOT NULL,
-    idcode INT NOT NULL,
-    numerocode INT,
-    valeurcode FLOAT NOT NULL,
+    idnotification INT NOT NULL,
     transactiondate TIMESTAMP,
     FOREIGN KEY (idadmin) REFERENCES backoff(idadmin),
-    FOREIGN KEY (idutilisateur) REFERENCES utilisateur(idutilisateur),
-    FOREIGN KEY (idcode) REFERENCES code(idcode)
+    FOREIGN KEY (idnotification) REFERENCES notification(idnotification)
 );
 
 create table regime(
@@ -102,7 +106,6 @@ create table commande(
     idcommande INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     idutilisateur INT NULL,
     idregimeactivite INT NOT NULL,
-    jour INT NOT NULL,
     semaine INT NOT NULL,
     prixcommande FLOAT NOT NULL,
     datecommande TIMESTAMP,

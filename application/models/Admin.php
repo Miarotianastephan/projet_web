@@ -4,6 +4,41 @@ if ( ! defined('BASEPATH')) exit('No direct script acces allowed');
 
 class Admin extends CI_Model
 {
+    public function getNbCommandeByRegime($idRegime){
+        $sql = $this->db->query("select * from commande
+        join regime_activite on regime_activite.idregimeactivite = commande.idregimeactivite 
+        where regime_activite.idregime = ".$idRegime."");
+        $tab = array();
+        $i=0;
+        foreach($sql->result_array() as $row){
+            $i++;
+        }
+        return $i;
+    }
+    public function getStatNombre(){
+        $sql = $this->db->query("select * from regime");
+        $tab = array();
+        $i=0;
+        $tab = [];
+        foreach($sql->result_array() as $row){
+            $tab[$i] = $this->getNbCommandeByRegime($row['idregime']);
+            $i++;
+        }
+        return $tab;
+    }
+    public function getStatNom(){
+        $sql = $this->db->query("select * from regime");
+        $tab = array();
+        $i=0;
+        $tab = [];
+        foreach($sql->result_array() as $row){
+            $tab[$i] = $row['nomregime'];
+            $i++;
+        }
+        return $tab;
+    }
+
+    // ::
     /*liste users*/
     public function listeAdmin()
     {
